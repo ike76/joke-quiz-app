@@ -151,10 +151,10 @@ function insertQuestion(jokeIndex){ // puts the question/setup in the question s
 
 function createJHTML(jokeIndex, punchIndex){
 	let jHTML = `
-	<label for="choice${punchIndex}">
-		<div class="answer-block">
+	<label for="choice${punchIndex}" >
+		<div class="answer-block" ${ punchIndex < 1 ? 'tabindex="0"' : 'tabindex="-1"'}>
 			<div>
-				<input type="radio" name="punchline" value="${punchIndex}" id="choice${punchIndex}" required>
+				<input type="radio" name="punchline" value="${punchIndex}" id="choice${punchIndex}" required aria-labelledby="punchlines">
 			</div>
 			<div class="punchline">
 				${jokes[jokeIndex].punchlines[punchIndex]}
@@ -185,7 +185,7 @@ function displayPicture(jokeIndex){
 }
 
 function displayGoButton(){
-	const goButton = `<input type="submit" value="GO" class="go-button">`
+	const goButton = `<input type="submit" value="GO" class="go-button" aria-labelledby="punchlines">`
 	$('.button-nav').html(goButton);
 }
 function removeGoButton(){
