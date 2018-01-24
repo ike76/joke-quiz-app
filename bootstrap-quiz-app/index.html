@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokeQuiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Luckiest+Guy">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color:#f0f0f0;">
+    <div class="container">
+        <h2 class="name-that-joke-title">Name that Joke</h2>
+    </div>
+    <div>
+        <div class="container border border-secondary rounded" id="joke-question-answer-container" style="background-color:#ffffff;">
+            <div class="row border-secondary">
+                <div class="col-md-4 j-image score-keeper-column" style="background-size:cover;background-repeat:no-repeat;background-position:center;">
+                    <div id="score-keeper-div">
+                        <div class="card score-card" style="background-color:rgba(255,255,255,0.73);">
+                            <div class="card-body score-card">
+                                <div>
+                                    <p class="question-count">Question <span class="question-number counter-number"><strong>1</strong> </span> of <span class="total-questions counter-number"><strong>10 </strong></span></p>
+                                </div>
+                                <div>
+                                    <h6 class="text-muted mb-2 font-size-0"><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-close star wrong"></i><i class="fa fa-close star wrong"></i>
+                                        <i
+                                            class="fa fa-close star wrong"></i><i class="fa fa-star-o star unanswered fa-spin"></i><i class="fa fa-star-o star unanswered"></i><i class="fa fa-star-o star unanswered"></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 id="yes-no-text" style="color:#ff0000;">NOPE! </h1>
+                    </div>
+                </div>
+                <div class="col-md-8 answer-picker-column" style="background-size:cover;background-position:center;">
+                    <div class="p-4" style="background-color:rgba(235,239,241,0.9);">
+                        <div id="question-div">
+                            <h1 class="j-setup">Why did the blonde get fired from the M&amp;Ms factory?</h1>
+                        </div>
+                        <hr>
+                        <form class="punchline-form">
+                            <div class="form-group">
+                                <div class="form-check" punchline="0"><label class="form-check-label fade-out"><input class="form-check-input" type="radio" required="" name="punchline"> For throwing away all the <strong>W</strong>'s.</label></div>
+                                <div class="form-check" punchline="1"><label class="form-check-label"><input class="form-check-input" type="radio" required="" name="punchline"> M&amp;Ms are manufactured by Mars, inc.<i class="fa fa-arrow-left"></i></label></div>
+                                <div class="form-check" punchline="2"><label class="form-check-label answer correct"><input class="form-check-input" type="radio" name="punchline"> She wasn't fired. &nbsp;YOU'RE fired.<span class="correct-response-text"><i class="fa fa-check correct"></i>CORRECT </span></label></div>
+                                <div
+                                    class="form-check" punchline="3"><label class="form-check-label answer wrong"><input class="form-check-input" type="radio" name="punchline"> She didn't really like candy. &nbsp;It's bad for you.<span class="wrong-response-text"><i class="fa fa-remove wrong-answer-x"></i>WRONG </span></label></div>
+                    </div>
+                    <div class="button-div submit-button-div"><button class="btn btn-primary submit" type="submit">Submit <i class="fa fa-arrow-right"></i> </button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container border border-secondary rounded" id="end-container" style="background-color:#ffffff;">
+        <div class="row border-secondary">
+            <div class="col-md-4 j-image score-keeper-column" style="background-size:cover;background-repeat:no-repeat;">
+                <div class="yep-nope-div"><img src="http://2.bp.blogspot.com/-Rb4mFgwbzIs/Ti9xm4zdjmI/AAAAAAAAAEM/miYHrvenTIc/s1600/donkey+tongue.jpg" width="100%"></div>
+            </div>
+            <div class="col-md-8 answer-picker-column">
+                <div id="question-div">
+                    <h1 class="j-setup">You got 8 out of 10 correct!</h1>
+                </div>
+                <hr>
+                <div class="button-div try-again-button-div"><button class="btn btn-success submit" type="button" id="try-again">Try Again <i class="fa fa-arrow-right"></i> </button></div>
+                <div class="score-card">
+                    <h6 class="text-muted mb-2 font-size-0"><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-star star correct"></i><i class="fa fa-close star wrong"></i><i class="fa fa-close star wrong"></i>
+                        <i
+                            class="fa fa-close star wrong"></i><i class="fa fa-star-o star unanswered fa-spin"></i><i class="fa fa-star-o star unanswered"></i><i class="fa fa-star-o star unanswered"></i></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container border border-secondary rounded" id="start-container" style="background-color:#ffffff;">
+        <div class="row border-secondary">
+            <div class="col-md-4 j-image score-keeper-column" style="background-image:url(&quot;https://i2.wp.com/activelearningps.com/wp-content/uploads/2015/09/Bored-Audience.jpg&quot;);background-size:cover;background-repeat:no-repeat;">
+                <div></div>
+            </div>
+            <div class="col-md-8 answer-picker-column">
+                <div id="question-div">
+                    <h1 class="j-setup">Stop me if you've heard this one before...</h1>
+                </div>
+                <hr>
+                <p>You'll be given 10 joke setups. Choose the correct punchline to win prizes!</p>
+                <div class="button-div start-button-div"><button class="btn btn-success submit" type="button" id="start-button">START <i class="fa fa-arrow-right"></i> </button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

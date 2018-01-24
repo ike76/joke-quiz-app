@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Finish That Joke!</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Shrikhand" rel="stylesheet">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header role="banner">
+	<div class="row">
+		<div class="col-12">
+			<h1>Finish that Joke!</h1>
+		</div>
+	</div>
+</header>	
+
+<main role="main">
+	<div class="row main-row">
+		<div class="test-questions-hider">			
+			<div class="col-6">
+				<div class="question-counter">
+					<p>question 5 of 10</p>
+				</div>
+				<div class="scorer">
+
+				</div>
+				<div class="joke-image ">
+					
+				</div>
+			</div>  <!-- end left column -->
+			<div class="col-6">
+				<div class="question">
+					<form action="#" method='POST' class="question-form">
+						<fieldset>
+							<legend>
+								<h3 class="joke-setup">Why couldn't the pony sing?</h3>
+							</legend>
+							<div class="punchlines">
+								
+							</div>
+							<nav role='navigation' class="button-nav">
+								
+								<!-- button gets placed here -->
+								
+							</nav>
+						</fieldset>
+					</form>
+					<nav class="next-button-container">
+						<!-- <button class="next-button"><span>NEXT</span> <i class="fas fa-arrow-alt-circle-right"></i>
+						</button> -->
+					</nav>
+				</div>
+			</div> <!-- end right column -->
+		</div> <!-- end text questions hider -->
+
+
+		<div class="start-hider">
+			<div class="col-12 centered">
+					
+				<h1>Welcome! </h1>
+				<p>You'll be given the setups for <span id="jokes-quantity">10</span> jokes.</p>
+				<p>your job is to choose the correct punchline.   <strong> READY?</strong></p>
+				<button class="button half-button" id="start-quiz">START</button>
+			</div>
+		</div>
+		<div class="end-hider">
+			<div class="col-12 centered">
+					
+				<h1 id="end-greeting">Good Job!</h1>
+				<p>You got <span id="final-score">X</span> out of a possible <span id="jokes-quantity-end">X</span> correct.   That's <span id="percentage">X</span>%!</p>
+	
+					<div class="scorer">
+					</div>
+					<button id="start-over" class="button half-button">START OVER</button>
+				<div class="col-3"></div>
+				
+			</div>
+		</div>
+	</div>
+	
+</main>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

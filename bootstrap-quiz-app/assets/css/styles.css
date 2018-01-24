@@ -1,0 +1,177 @@
+.j-setup {
+  font-family:'Oswald', sans-serif;
+}
+
+.j-setup {
+  /*margin:40px;*/
+}
+
+.fade-out {
+  opacity:.15;
+}
+
+.question-count {
+  margin:0;
+  text-align:right;
+}
+
+.score-keeper-column {
+  text-align:center;
+  padding:0;
+  min-height:350px;
+}
+
+.answer-picker-column {
+  border-radius:10px;
+  padding:25px;
+}
+
+.name-that-joke-title {
+  font-family:'Luckiest Guy', cursive;
+  font-size:40px;
+  text-align:center;
+  margin:20px auto;
+}
+
+.yep-nope-div {
+  background-color:black;
+  border-radius:10px;
+  padding:15px;
+  margin-top:15px;
+  display:none;
+}
+
+.j-image {
+}
+
+.star.correct {
+  color:#1eb53a;
+}
+
+.correct-answer {
+  background-color:rgba(30,181,58,0.3);
+}
+
+.wrong-answer {
+  background-color:rgba(207,92,85,0.3);
+}
+
+.correct-answer-star {
+  color:#1eb53a;
+  margin-left:10px;
+  font-size:25px;
+}
+
+.wrong-answer-x {
+  color:red;
+  margin-left:10px;
+  font-size:25px;
+}
+
+.card {
+  border:none;
+}
+
+.score-card {
+  width:100%;
+}
+
+.counter-number {
+  font-size:125%;
+  font-family:'luckiest guy';
+}
+
+.yes-nope {
+  font-size:60px;
+}
+
+.nope {
+  color:#ff0000;
+}
+
+.yes {
+  color:#1eb53a;
+}
+
+.star.wrong {
+  color:#a32638;
+}
+
+.form-check-label.answer.correct {
+  /*border:1px green solid;*/
+}
+
+.form-check-label.answer.correct {
+}
+
+.star.unanswered {
+  color:#37434d;
+}
+
+.score-card {
+  padding:2px 10px;
+  border-radius:5px;
+  /*position:absolute;*/
+}
+
+.star {
+  width:10%;
+  text-align:center;
+  margin:0 auto;
+  font-size:20px;
+}
+
+.star.current {
+  background-color:yellow;
+}
+
+.font-size-0 {
+  font-size:0;
+}
+
+.button-div {
+  text-align:center;
+}
+
+.correct-response-text {
+  font-weight:bolder;
+  color:green;
+  font-size:20px;
+}
+
+.wrong-response-text {
+  font-weight:bolder;
+  color:red;
+  font-size:20px;
+}
+
+#score-keeper-div {
+  position:absolute;
+  bottom:10px;
+  width:100%;
+  left:0;
+}
+
+#yes-no-text {
+  font-family:'luckiest guy';
+  font-size:75px;
+  position:absolute;
+  bottom:100px;
+  left:0;
+  right:0;
+  transform:rotate(-20deg);
+  margin:0 auto;
+  padding:0;
+  -webkit-text-stroke:1px black;
+  color:white;
+  text-shadow:3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.btn {
+  margin:15px;
+}
+
